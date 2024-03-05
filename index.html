@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f43ea8a16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi,I'm <span>Sejal</span><br>From Vadodara</h1>
+        </div>
+    </div>
+ </div> 
+
+ <!-- ABOUT -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a motivated individual with a Bachelor of Engineering in Computer Science 
+                from Vadodara Institute of Engineering. Currently, I am dedicated to expanding my 
+                skills and knowledge in the field of data analysis. With a strong foundation in 
+                computer science and a passion for leveraging data to drive insights, I am committed
+                to excelling in the realm of data analytics. My journey into data analysis is driven
+                by a desire to apply my technical expertise to solve real-world problems and make 
+                meaningful contributions in the field of finance. I am currently engaged in 
+                learning data analysis techniques and am determined to utilize this knowledge to
+                optimize investment strategies and enhance portfolio performance.With a proactive
+                attitude and a willingness to learn, I am confident in my ability to adapt to new 
+                challenges and excel in this dynamic and evolving field. I am committed to continuous
+                improvement and am eager to leverage my skills to deliver value and drive success in 
+                the realm of data analysis.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analyst</span><br>Analyzing and interpreting complex datasets</li>
+                        <li><span>Data Visualization</span><br>Creating insightful visualizations to communicate findings</li>
+                        <li><span>SQL queries for EDA</span><br>Utilizing SQL queries for data extraction and exploratory data analysis</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb 2023 tO April 2023</span><br>Web development intern at IBM CSRBOX</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2023</span><br>BE from Vadodara Institute of Engineering</li>
+                        <li><span>2017-2020</span><br>Diploma in Computer from Government Polytechnic For Girls Ahmedabad</li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div> 
+
+ <!-- Services -->
+
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Data Analysis with Python</h2>
+                <p>Explore the power of Python for data analysis. Learn how to manipulate and analyze data using libraries like Pandas, NumPy, and Matplotlib.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-excel"></i>
+                <h2>Data Visualization Techniques</h2>
+                <p>Discover effective data visualization techniques to present your findings clearly and intuitively.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>SQL for Data Analysis</h2>
+                <p>Master SQL queries for extracting valuable insights from databases. Understand how to perform data manipulation and aggregation using SQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- Portfolio -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Superstore Analysis</h3>
+                    <p>Our Superstore Analysis helps us find out what we're good at and where we can 
+                    do better.This means we can organize our stock better,make our advertising more 
+                    effective,and make our customers happier. By using the information we get from 
+                    this analysis,we aim to make more money, make our work smoother, and stay ahead 
+                    of our competitors in the market.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Cars24 Data Analysis</h3>
+                    <p>Cars24 is a leading automotive company that specializes in facilitating the
+                    buying and selling of used cars. With a focus on data analysis, Cars24 endeavors 
+                    to continuously improve its operations and enhance customer satisfaction. Through 
+                    meticulous stock organization and effective advertising strategies, Cars24 aims to
+                    optimize its business processes, increase profitability, and maintain a 
+                    competitive edge in the market.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+<!-- #contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sejalprasad02@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7359613790</p>
+                <div class="social-icons">
+                    <a href="https://github.com/sejalprasad3110"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sejal-prasad/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sejal.All rights reserved</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script> 
+
+ <script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+ </script>
+
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzsN-PMCL1MMSyN7B9E1_KLQUgrf0TnlrUiDxQKjvAKiW-t-q4a-IgNgevEPZfGoqCc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
